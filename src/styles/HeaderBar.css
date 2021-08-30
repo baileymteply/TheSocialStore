@@ -1,0 +1,10 @@
+
+.HeaderDivider {
+    border-color: #ebf0f8;
+}
+
+.IconLocation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

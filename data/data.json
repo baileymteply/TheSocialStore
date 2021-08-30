@@ -1,0 +1,64 @@
+{
+    "products": [
+        { 
+            "title": "Really Cool Umbrella",   
+            "image": "",
+            "description": "a fully functional umbrella",
+            "price": "$14.99",
+            "id": 1
+        },
+        { 
+            "title": "Pretty Nice Roku Remote", 
+            "image": "",
+            "description": "Doesnt get lost",
+            "price": "$8.99",
+            "id": 2
+        }
+    ],
+    "Categories": [
+        {
+            "title": "Clothes"
+        },
+        {
+            "title": "Furniture"
+        },
+        {
+            "title": "Electronics"
+        },
+        {
+            "title": "Other"
+        }
+    ],
+    "ExamplePosts": [
+        {
+            "Author": "Darth Vader",
+            "Time": "09:15",
+            "Post": "Wow, super impressed with my new ice cream scooper!",
+            "Link": ""
+        },
+        {
+            "Author": "Marty McFly",
+            "Time": "09:55",
+            "Post": "Went ahead and bought another hoverboard",
+            "Link": ""
+        },
+        {
+            "Author": "Frodo Baggins",
+            "Time": "12:10",
+            "Post": "They even sell replacement appendages",
+            "Link": ""
+        },
+        {
+            "Author": "Spider-Man",
+            "Time": "12:45",
+            "Post": "0/10 could not find used webshooters",
+            "Link": ""
+        },
+        {
+            "Author": "Jay-Z",
+            "Time": "16:20",
+            "Post": "Maybe it isnt such a hard knock life with all of these great products",
+            "Link": ""
+        }
+    ]
+}
