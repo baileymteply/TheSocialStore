@@ -1,0 +1,93 @@
+[
+    { 
+        "title": "Really Cool Umbrella",   
+        "image": "",
+        "description": "a fully functional umbrella",
+        "price": "$14.99",
+        "id": 1
+    },
+    { 
+        "title": "Pretty Nice Roku Remote", 
+        "image": "",
+        "description": "Doesnt get lost",
+        "price": "$8.99",
+        "id": 2
+    },
+    { 
+        "title": "Really Cool Umbrella",   
+        "image": "",
+        "description": "a fully functional umbrella",
+        "price": "$14.99",
+        "id": 2
+    },
+    { 
+        "title": "Really Cool Umbrella",   
+        "image": "",
+        "description": "a fully functional umbrella",
+        "price": "$14.99",
+        "id": 3
+    },
+    { 
+        "title": "Really Cool Umbrella",   
+        "image": "",
+        "description": "a fully functional umbrella",
+        "price": "$14.99",
+        "id": 4
+    },
+    { 
+        "title": "Really Cool Umbrella",   
+        "image": "",
+        "description": "a fully functional umbrella",
+        "price": "$14.99",
+        "id": 5
+    },
+    { 
+        "title": "Really Cool Umbrella",   
+        "image": "",
+        "description": "a fully functional umbrella",
+        "price": "$14.99",
+        "id": 6
+    },
+    { 
+        "title": "Really Cool Umbrella",   
+        "image": "",
+        "description": "a fully functional umbrella",
+        "price": "$14.99",
+        "id": 7
+    },
+    { 
+        "title": "Really Cool Umbrella",   
+        "image": "",
+        "description": "a fully functional umbrella",
+        "price": "$14.99",
+        "id": 8
+    },
+    { 
+        "title": "Really Cool Umbrella",   
+        "image": "",
+        "description": "a fully functional umbrella",
+        "price": "$14.99",
+        "id": 9
+    },
+    { 
+        "title": "Really Cool Umbrella",   
+        "image": "",
+        "description": "a fully functional umbrella",
+        "price": "$14.99",
+        "id": 10
+    },
+    { 
+        "title": "Really Cool Umbrella",   
+        "image": "",
+        "description": "a fully functional umbrella",
+        "price": "$14.99",
+        "id": 11
+    },
+    { 
+        "title": "Really Cool Umbrella",   
+        "image": "",
+        "description": "a fully functional umbrella",
+        "price": "$14.99",
+        "id": 12
+    }
+]

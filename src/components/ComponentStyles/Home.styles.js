@@ -1,9 +1,19 @@
 import styled from 'styled-components';
 
 export const Nav = styled.section`
-    width: 100%;
+    /* width: 100%;
     height: 15%;
-    background-color: #5e6269;
+    background-color: #5e6269; */
+    background-color: gray;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 20px;
     `;
 export const Wrapper = styled.section`
     width: 100%;

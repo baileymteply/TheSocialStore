@@ -4,6 +4,7 @@ import "../../styles/HeaderBar.css";
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Store from '../Store'
 import Home from '../Home'
+import { Wrapper, HomeButton, StoreButton, ProfilePicture } from './GeneralCompStyles/HeaderBar.styles'
 
 function HeaderBar() {
 
@@ -13,30 +14,24 @@ function HeaderBar() {
   
   return (
     <Router>
-      <div className="text-7sb text-white grid grid-cols-8 h-1/6 shadow-2xl">
+      <Wrapper>
         <Switch>
-          <button onClick={logSomething} className="col-start-1 col-span-1 IconLocation">
+          <HomeButton onClick={logSomething} className="col-start-1 col-span-1 IconLocation">
             <Route path="/" component={Home}>
               Home
             </Route>
-          </button>
-          <button className="col-start-2 col-span-1 IconLocation">
+          </HomeButton>
+          <StoreButton>
             <Route path="/store" component={Store}>
               Store
             </Route>
-          </button>
+          </StoreButton>
         </Switch>
-        {/*<div className="col-start-3 col-span-1 IconLocation">
-        <h1 className="">About</h1>
-      </div> */}
-        <div className="col-start-8 IconLocation">
-          <img
+          <ProfilePicture
             src={ProfilePic}
-            className="mx-8 w-20 h-20 rounded-full border-2 border-white"
-            alt=""
-          />
-        </div>
-      </div>
+          >
+        </ProfilePicture>
+      </Wrapper>
     </Router>
   );
 }

@@ -8,3 +8,11 @@ TextBox {
     display: flex;
     align-items: center;
 }
+
+.search-img {
+    height: 100px;
+    width: 30px;
+    color: rgb(212, 212, 212);
+    place-items: center;
+    display: grid;
+}
