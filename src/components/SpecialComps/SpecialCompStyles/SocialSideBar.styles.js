@@ -6,6 +6,7 @@ export const Container = styled.section`
     height: 100%;
     padding: 5px;
     color: #000;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     `;
 
 export const TextBox = styled.div`

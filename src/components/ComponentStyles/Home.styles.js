@@ -42,7 +42,8 @@ export const RTopDiv= styled.section`
     padding-bottom: 20px;
     width: 100%;
     height: 10%;
-    position: relative;
+    position: abs;
+    z-index: 10;
     `;
 
 export const RBottomDiv= styled.section`
@@ -50,4 +51,5 @@ export const RBottomDiv= styled.section`
     padding-top: 10px;
     width: 100%;
     height: 90%;
+    z-index: 20;
     `;

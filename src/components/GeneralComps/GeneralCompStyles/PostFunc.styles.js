@@ -5,6 +5,7 @@ export const Wrapper = styled.div`
     margin-left: 10px;
     width: 100;
     border-color: rgb(212, 212, 212);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     `;
 
 export const PostButton = styled.button`
@@ -12,4 +13,5 @@ export const PostButton = styled.button`
     color: black;
     align-items: center;
     text-align: center;
+    
 `;

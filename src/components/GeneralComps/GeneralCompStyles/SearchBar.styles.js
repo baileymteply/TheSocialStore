@@ -19,7 +19,7 @@ export const TextField = styled.input`
     position: relative;
     padding: 10px;
     height: 100%;   
-    width: 96%;
+    width: 100%;
     color: black;
     align-items: center;
     font-size: 28px;
@@ -34,9 +34,16 @@ export const SearchIcon = styled.image`
     display: flex;
     `;
 
+export const ClearIcon = styled.button`
+    width: 5%;
+    background-color: white;
+    height: 100%;
+    position: relative;
+    display: flex;
+`;
+
 export const SearchResults = styled.div`
-    margin-left: 4%;
-    width: 96%;
+    width: 101%;
     height: 200px;
     border-bottom: 4px solid;
     border-left: 4px solid;
