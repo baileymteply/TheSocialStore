@@ -5,7 +5,8 @@ import React, { useState } from 'react';
 import LoginForm from './components/LoginForm';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './components/Home';
-import { AppContainer } from './App.styles'
+import { AppContainer } from './App.styles';
+import Profile from './components/Profile';
 
 function App() {
   const adminUser = {
@@ -44,7 +45,8 @@ function App() {
           <AppContainer>
             <Switch>
               <Route path="/">
-                <Home/>
+                <Profile/>
+                {/* <Home/> */}
               </Route>
             </Switch>
             {/* <h2>Welcome, <span>{user.name}</span></h2> */}

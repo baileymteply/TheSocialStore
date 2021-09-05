@@ -12,7 +12,6 @@ export const Nav = styled.section`
     font-size: 2.5rem;
     position: sticky;
     top: 0;
-    z-index: 10;
     box-shadow: 20px;
     `;
 export const Wrapper = styled.section`
@@ -42,8 +41,6 @@ export const RTopDiv= styled.section`
     padding-bottom: 20px;
     width: 100%;
     height: 10%;
-    position: abs;
-    z-index: 10;
     `;
 
 export const RBottomDiv= styled.section`
@@ -51,5 +48,6 @@ export const RBottomDiv= styled.section`
     padding-top: 10px;
     width: 100%;
     height: 90%;
-    z-index: 20;
+    background-color: green;
+    z-index: 0;
     `;

@@ -13,7 +13,7 @@ const PostFunc = (props) => {
             <PostButton onClick={() => setButton(true)}>
                 Post!
                 <PopUp trigger={button} setTrigger={setButton}>
-                    <h3>My Popup</h3>
+                    
                 </PopUp>
             </PostButton>
         </Wrapper>

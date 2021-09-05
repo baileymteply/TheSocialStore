@@ -146,3 +146,27 @@ form .form-inner .form-group input:focus {
 .post-time {
 
 }
+
+.sample-product-create-form {
+    margin: 0 auto;
+    width: 60%;
+    height: 70%;
+    background-color: red;
+    position: relative;
+    align-items: center;
+}
+
+.add-product {
+    
+}
+
+.input-text {
+background-color: rgb(235, 235, 235);
+}
+
+.input-box {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+

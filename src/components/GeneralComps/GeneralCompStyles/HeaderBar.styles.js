@@ -8,7 +8,6 @@ export const Wrapper = styled.nav`
     font-size: 2.5rem;
     position: sticky;
     top: 0;
-    z-index: 1;
     padding: 0 24px;
     width: 100%;
     box-shadow: 20px;
