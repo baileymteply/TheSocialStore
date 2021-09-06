@@ -170,3 +170,9 @@ background-color: rgb(235, 235, 235);
     margin-right: 5px;
 }
 
+.product-container {
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
+    background: red;
+}
