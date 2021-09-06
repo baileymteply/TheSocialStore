@@ -4,6 +4,7 @@ import PopUp from './PopUp'
 import Axios from 'axios'
 import '../index.css'
 import { Nav, Wrapper, LeftContainer, RightContainer, RTopDiv, RBottomDiv } from './ComponentStyles/Home.styles'
+import AllProducts from './SpecialComps/AllProducts'
 
 function Profile() {
     return (
@@ -13,6 +14,7 @@ function Profile() {
             </Nav>
             <Wrapper>
                 <LeftContainer>
+                    <AllProducts/>
                 </LeftContainer>
                 <RightContainer>
                     <RTopDiv>
