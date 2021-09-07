@@ -1,45 +1,34 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import axios from 'axios'
 import '../index.css'
-import { PopUp1, PopUpInner, CloseButton } from './ComponentStyles/PopUp.styles';
+import { PopUp1, PopUpInner } from './ComponentStyles/PopUp.styles';
 
-function PopUp(props) {
+function PopUp() {
 
-    const [name, setName] = useState("");
+    const [names, setName] = useState("");
     const [price, setPrice] = useState("");
     const [description, setDescription] = useState("")
-
-    useEffect(() => {
-        axios.get('http://localhost:3001/api/get')
-            .then((response) => {
-                console.log(response)
-            })
-    }, [])
+    const [productList, setProductList] = useState([])
 
     const sendProduct = () => {
         axios.post('http://localhost:3001/api/insert', {
-            productName: name,
+            productName: names,
             productPrice: price,
             productDescription: description
         })
-            .then((response) => {
-                alert(response);
-            });
+        setProductList([...productList,
+        { productName: names, productPrice: price }])
     };
 
     return (
         <PopUp1>
             <PopUpInner>
-                <CloseButton onClick={() => props.setTrigger(false)}>
-                    Close
-                </CloseButton>
                 <h3>Add Product</h3>
                 <div className="add-product">
                     <div className="input-box">
                         <label>Product Name: </label>
                         <input className="input-text" type="text" name="name" onChange={(event) => {
                             setName(event.target.value);
-
                         }} />
                     </div>
                     <div className="input-box">
@@ -56,10 +45,8 @@ function PopUp(props) {
                     </div>
                     <button onClick={() => {
                         sendProduct();
-                        /* console.log(name, price, description) */
-                        }} >Post</button>
+                    }} >Post</button>
                 </div>
-                {props.children}
             </PopUpInner>
         </PopUp1>
     )

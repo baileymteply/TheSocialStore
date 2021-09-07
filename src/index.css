@@ -172,7 +172,47 @@ background-color: rgb(235, 235, 235);
 
 .product-container {
     width: 90%;
-    height: 90%;
+    height: 100%;
     margin: 0 auto;
-    background: red;
+    background-color: white;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.product-container::-webkit-scrollbar {
+    display: none;
+}
+
+.product-card {
+    font-size: 25px;
+    text-align: center;
+    color: black;
+    margin: 10px;
+    background-color: rgb(235, 235, 235);
+    border-width: 4px;
+    border-color: rgb(225, 225, 225);
+}
+
+.product-header {
+
+}
+
+.product-description {
+    font-size: 20px;
+    margin: 0 auto;
+}
+
+.button-holder {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+#inputbox {
+    width: 100px;
+    border-width: 5px solid;
+    border-color: black;
+    background-color: white;
 }

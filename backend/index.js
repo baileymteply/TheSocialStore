@@ -19,18 +19,9 @@ app.get("/api/get", (req, res) => {
     const sqlSelect =
         "SELECT * FROM products_table";
     database.query(sqlSelect, (err, result) => {
-            console.log(result);
-        }
+        res.send(result)
+    }
     );
-})
-
-//Delete entry
-app.delete('/api/delete', (req, res) => {
-    const sqlDelete = 
-        "DELETE * FROM products_table";
-    database.query(sqlDelete, (err, result) => {
-        console.log(result);
-    })
 })
 
 //Adding new entry
@@ -49,6 +40,26 @@ app.post("/api/insert", (req, res) => {
     );
 });
 
+//Delete entry
+app.delete('/api/delete/:productName', (req, res) => {
+    const productName = req.params.productName;
+    const sqlDelete =
+        "DELETE FROM products_table WHERE productName = ?";
+    database.query(sqlDelete, productName, (err, result) => {
+        if (err) console.log(err);
+    })
+})
+
+//Update entry
+app.put('/api/update', (req, res) => {
+    const productName = req.body.productName;
+    const productPrice = req.body.productPrice;
+    const sqlUpdate =
+        "UPDATE products_table SET productPrice = ? WHERE productName = ?";
+    database.query(sqlUpdate, [productName, productPrice], (err, result) => {
+        if (err) console.log(err);
+    })
+})
 
 app.listen(3001, () => {
     console.log("hello from port 3001");
