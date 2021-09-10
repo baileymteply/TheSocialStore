@@ -1,11 +1,7 @@
-/* import "./styles/HeaderBar.css";
-import HeaderBar from "./components/Header/HeaderBar.js"
-import PageLayout from "./components/Page/PageLayout.js" */
 import React, { useState } from 'react';
 import LoginForm from './components/LoginForm';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './components/Home';
-import { AppContainer } from './App.styles';
 import Profile from './components/Profile';
 
 function App() {
@@ -42,7 +38,7 @@ function App() {
     <Router>
       <div className="App">
         {(user.email !== "user@user.com") ? (
-          <AppContainer>
+          <div className="app-container">
             <Switch>
               <Route path="/">
                 <Profile/>
@@ -50,7 +46,7 @@ function App() {
               </Route>
             </Switch>
             {/* <h2>Welcome, <span>{user.name}</span></h2> */}
-          </AppContainer>
+            </div>
         ) : ( 
             <LoginForm Login={Login} error={error} />
         )}
@@ -60,19 +56,3 @@ function App() {
 }
 
 export default App;
-
-
-/* import "./styles/HeaderBar.css";
-import HeaderBar from "./components/Header/HeaderBar.js"
-import PageLayout from "./components/Page/PageLayout.js"
-
-function App() {
-  return (
-    <div className="border-2 relative h-screen">
-        <HeaderBar></HeaderBar>
-        <PageLayout></PageLayout>
-    </div>
-  );
-}
-
-export default App; */

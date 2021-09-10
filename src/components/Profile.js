@@ -3,25 +3,27 @@ import HeaderBar from './GeneralComps/HeaderBar'
 import PopUp from './PopUp'
 import Axios from 'axios'
 import '../index.css'
-import { Nav, Wrapper, LeftContainer, RightContainer, RTopDiv, RBottomDiv } from './ComponentStyles/Home.styles'
+import './Components.css'
 import AllProducts from './SpecialComps/AllProducts'
 
 function Profile() {
     return (
         <div className="border-2 relative h-screen">
-            <Nav>
+            <div className="nav-ele">
                 <HeaderBar />
-            </Nav>
-            <Wrapper>
-                <LeftContainer>
+            </div>
+            <div className="wrapper-ele">
+                <div className="left-container">
                     <AllProducts/>
-                </LeftContainer>
-                <RightContainer>
-                    <RTopDiv>
-                    </RTopDiv>
+                </div>
+                <div className="right-container">
+                    <div className="right-top-ele">
+                    </div>
+                    <div className="right-bottom-ele">
                         <PopUp/>
-                </RightContainer>
-            </Wrapper>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }

@@ -1,5 +1,4 @@
 import React from 'react'
-import '../styles/HeaderBar.css';
 import '../index.css'
 import HeaderBar from './GeneralComps/HeaderBar.js';
 import SocialSideBar from './SpecialComps/SocialSideBar';

@@ -1,34 +1,33 @@
 import React from 'react'
-import '../styles/HeaderBar.css';
 import '../index.css'
+import './Components.css'
 import HeaderBar from './GeneralComps/HeaderBar.js';
 import SearchBar from './GeneralComps/SearchBar';
 import PostFunc from './GeneralComps/PostFunc'
 import HomeChoices from './SpecialComps/HomeChoices';
-import { Wrapper, LeftContainer, RightContainer, RTopDiv, RBottomDiv, Nav } from './ComponentStyles/Home.styles'
 import SocialSideBar from './SpecialComps/SocialSideBar';
 import ProductData from './Products.json'
 
 function Home() {
     return (
         <div className="border-2 relative h-screen">
-            <Nav>
-                <HeaderBar/>
-            </Nav>
-            <Wrapper>
-                <LeftContainer>
+            <div className="nav-ele">
+                <HeaderBar />
+            </div>
+            <div className="wrapper-ele">
+                <div className="left-container">
                     <SocialSideBar/>
-                </LeftContainer>
-                <RightContainer>
-                    <RTopDiv>
+                </div>
+                <div className="right-container">
+                    <div className="right-top-ele">
                         <SearchBar placeholder="Search for a Product..." data={ProductData}/>
                         <PostFunc/>
-                    </RTopDiv>
-                    <RBottomDiv>
+                    </div>
+                    <div className="right-bottom-ele">
                         <HomeChoices/>
-                    </RBottomDiv>
-                </RightContainer>
-            </Wrapper>
+                    </div>
+                </div>
+            </div>
             <div>
 
             </div>

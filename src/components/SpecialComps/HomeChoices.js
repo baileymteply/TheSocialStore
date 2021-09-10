@@ -1,5 +1,4 @@
-import { Container } from './SpecialCompStyles/HomeChoices.styles'
-import '../../index.css'
+import './SpecialComps.css'
 import React, { useState, useEffect } from "react";
 import CategoryList from './CategoryList';
 
@@ -28,10 +27,10 @@ const HomeChoices = () => {
         })
     }, [])
     return ( 
-        <Container>
+        <div className="home-container-ele">
             {categories && <CategoryList categories={ categories } handleDelete={ handleDelete } />}
 {/*             {items} */}
-        </Container>
+        </div>
      );
 }
  

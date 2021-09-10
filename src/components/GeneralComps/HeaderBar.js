@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import ProfilePic from "../../assets/ProfilePic.jpg";
-import "../../styles/HeaderBar.css";
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Store from '../Store'
 import Home from '../Home'
-import { Wrapper, HomeButton, StoreButton, ProfilePicture } from './GeneralCompStyles/HeaderBar.styles'
+import "./GeneralComps.css"
 
 function HeaderBar() {
 
@@ -14,24 +13,25 @@ function HeaderBar() {
   
   return (
     <Router>
-      <Wrapper>
+      <div className="header-wrapper-ele">
         <Switch>
-          <HomeButton onClick={logSomething} className="col-start-1 col-span-1 IconLocation">
+          <div onClick={logSomething} className="home-button col-start-1 col-span-1 IconLocation">
             <Route path="/" component={Home}>
               Home
             </Route>
-          </HomeButton>
-          <StoreButton>
+          </div>
+          <div className="store-button">
             <Route path="/store" component={Store}>
               Store
             </Route>
-          </StoreButton>
+          </div>
         </Switch>
-          <ProfilePicture
+          <div
+            className="profile-pic"
             src={ProfilePic}
           >
-        </ProfilePicture>
-      </Wrapper>
+        </div>
+      </div>
     </Router>
   );
 }

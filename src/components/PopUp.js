@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import axios from 'axios'
 import '../index.css'
-import { PopUp1, PopUpInner } from './ComponentStyles/PopUp.styles';
+import './Components.css'
 
 function PopUp() {
 
@@ -21,8 +21,8 @@ function PopUp() {
     };
 
     return (
-        <PopUp1>
-            <PopUpInner>
+        <div className="popup-ele">
+            <div className="popup-inner">
                 <h3>Add Product</h3>
                 <div className="add-product">
                     <div className="input-box">
@@ -47,8 +47,8 @@ function PopUp() {
                         sendProduct();
                     }} >Post</button>
                 </div>
-            </PopUpInner>
-        </PopUp1>
+            </div>
+        </div>
     )
 }
 

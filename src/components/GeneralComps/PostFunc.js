@@ -1,4 +1,3 @@
-import { PostButton, Wrapper } from './GeneralCompStyles/PostFunc.styles';
 import PopUp from '../PopUp';
 import { useState } from 'react';
 
@@ -9,14 +8,14 @@ const PostFunc = (props) => {
 
 
     return (
-        <Wrapper>
-            <PostButton onClick={() => setButton(true)}>
+        <div className="postfunc-wrapper-ele">
+            <div className="post-button" onClick={() => setButton(true)}>
                 Post!
                 <PopUp trigger={button} setTrigger={setButton}>
                     
                 </PopUp>
-            </PostButton>
-        </Wrapper>
+            </div>
+        </div>
     );
 }
 

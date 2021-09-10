@@ -1,5 +1,4 @@
-import { TextField, Wrapper, SearchIcon, SearchBarComps, SearchResults, ResultItem, ClearIcon } from './GeneralCompStyles/SearchBar.styles';
-import '../../styles/SearchBar.css';
+import './GeneralComps.css'
 import React, { useState } from 'react';
 import SearchIconImg from '@material-ui/icons/Search';
 import ClearIconImg from '@material-ui/icons/Clear';
@@ -28,33 +27,33 @@ const SearchBar = ({ placeholder, data }) => {
         setWordEntered("");
     }
     return (
-        <Wrapper>
-            <SearchBarComps>
+        <div className="search-wrapper-ele">
+            <div className="search-comps">
                 {filteredData.length == 0 ?
-                    <SearchIcon >
+                    <div className="search-icon">
                         <SearchIconImg className="search-img" />
-                    </SearchIcon>
+                    </div>
                     :
-                    <ClearIcon >
+                    <div className="clear-icon" >
                         <ClearIconImg  onClick={clearFilter()}/>
-                    </ClearIcon>
+                    </div>
                 }
-                <TextField placeholder={placeholder} value={wordEntered} onChange={handleFilter} />
-            </SearchBarComps>
+                <input className="search-text-field" placeholder={placeholder} value={wordEntered} onChange={handleFilter} />
+            </div>
             {filteredData.length != 0 && (
-                <SearchResults>
+                <div className="search-results">
                     {filteredData.slice(0, 15).map((value, key) => {
                         return (
-                            <ResultItem className="search-itme" href={value.link} target="_blank" rel="noreferrer">
+                            <div className="search-result-item" className="search-itme" href={value.link} target="_blank" rel="noreferrer">
                                 <p>
                                     {value.title}
                                 </p>
-                            </ResultItem>
+                            </div>
                         )
                     })}
-                </SearchResults>
+                </div>
             )}
-        </Wrapper>
+        </div>
     );
 }
 

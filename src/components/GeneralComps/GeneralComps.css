@@ -1,0 +1,121 @@
+/* Header Bar */
+.header-wrapper-ele {
+    height: 80%;
+    display: grid;
+    grid-column: auto;
+    align-items: center;
+    font-size: 2.5rem;
+    position: sticky;
+    top: 0;
+    padding: 0 24px;
+    width: 100%;
+    box-shadow: 20px; 
+}
+
+.home-button {
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+
+.store-button {
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+
+.profile-picture {
+    grid-column-start: 8;
+    grid-column-end: 8;
+    border-radius: 50%;
+    border-width: 2px;
+    border-color: white;
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+}
+
+/* Post Func */
+.postfunc-wrapper-ele {
+    border-width: 4px;
+    margin-left: 10px;
+    width: 100;
+    border-color: rgb(212, 212, 212);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.post-button {
+    position: relative;
+    color: black;
+    align-items: center;
+    text-align: center;
+}
+
+/* Search Bar */
+.search-wrapper-ele {
+    width: 100%;
+    height: 100%;
+    border-width: 4px;
+    border-color: rgb(212, 212, 212);
+    margin-right: 10px;
+}
+
+.search-comps {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.search-text-field {
+    background-color: white;
+    position: relative;
+    padding: 10px;
+    height: 100%;   
+    width: 100%;
+    color: black;
+    align-items: center;
+    font-size: 28px;
+}
+
+.search-icon {
+    width: 5%;
+    background-color: white;
+    height: 100%;
+    position: relative;
+    display: flex;
+}
+
+.clear-icon {
+    width: 5%;
+    background-color: white;
+    height: 100%;
+    position: relative;
+    display: flex;
+}
+
+.search-results {
+    width: 101%;
+    height: 200px;
+    border-bottom: 4px solid;
+    border-left: 4px solid;
+    border-right: 4px solid;
+    border-color: rgb(212, 212, 212);
+
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.search-results::-webkit-scrollbar {
+    display: none;
+}
+
+.search-result-item {
+    width: 100%;
+    height: 50px;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    color: black;
+    z-index: 10;
+    font-size: 25px;
+}
