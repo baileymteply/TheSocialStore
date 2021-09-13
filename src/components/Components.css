@@ -49,8 +49,10 @@
 
 .popup-ele {
     width: 100%;
-    height: 50%;
+    height: 60%;
     background-color: red;
+    border-width: 4px;
+    border-color: rgb(225, 225, 225);
 }
 
 .popup-inner {
