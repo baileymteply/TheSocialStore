@@ -3,6 +3,7 @@ import LoginForm from './components/LoginForm';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './components/Home';
 import Profile from './components/Profile';
+import { UserContext } from './components/GeneralComps/UserContext';
 
 function App() {
   const adminUser = {
@@ -37,13 +38,15 @@ function App() {
   return (
     <Router>
       <div className="App">
-        {(user.email !== "user@user.com") ? (
+        {(user.email !== "") ? (
           <div className="app-container">
             <Switch>
+              <UserContext.Provider value={user.name}>
               <Route path="/">
                 <Profile/>
                 {/* <Home/> */}
               </Route>
+              </UserContext.Provider>
             </Switch>
             {/* <h2>Welcome, <span>{user.name}</span></h2> */}
             </div>

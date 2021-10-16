@@ -1,15 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import ProfilePic from "../../assets/ProfilePic.jpg";
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Store from '../Store'
 import Home from '../Home'
 import "./GeneralComps.css"
+import { UserContext } from './UserContext'
 
 function HeaderBar() {
 
   const logSomething = () => {
     console.log('hey it is kind of working')
   }
+
+  const msg = useContext(UserContext)
   
   return (
     <Router>
@@ -32,6 +35,7 @@ function HeaderBar() {
           >
         </div>
       </div>
+      {msg}
     </Router>
   );
 }
